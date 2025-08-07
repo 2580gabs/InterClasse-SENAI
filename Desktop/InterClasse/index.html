@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">4
+  <title>Interclasse SENAI 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <header>
+    <h1>Interclasse SENAI 2025</h1>
+    <h2>ESPORTE</h2>
+  </header>
+
+  <section class="desafio">
+    VOCÊ ACEITA ESSE DESAFIO ?
+    <small>saiba mais</small>
+  </section>
+
+  <section class="secao">
+    <h3>Vôlei</h3>
+    <p id="texto-volei">O Voleibol é um dos esportes mais esperados do Interclasse do SENAI. Com jogos emocionantes e disputas acirradas, as equipes demonstram trabalho em equipe, estratégia e muita garra.</p>
+    <button class="btn-toggle" onclick="toggle('texto-volei')">Mostrar/Ocultar</button>
+    <img src= "volei.jpg" class="imagem">
+  </section>
+
+  <section class="secao">
+    <h3>Futsal</h3>
+    <p id="texto-futsal">O Futsal é sempre um destaque nas competições. A velocidade das jogadas e a habilidade dos alunos transformam cada partida em um verdadeiro espetáculo de gols e dribles.</p>
+    <button class="btn-toggle" onclick="toggle('texto-futsal')">Mostrar/Ocultar</button>
+    <img src="futsal.jpg" alt="Futsal" class="imagem">
+  </section>
+
+  <section class="secao">
+    <h3>Tênis de Mesa</h3>
+    <p id="texto-tenis">O Tênis de Mesa exige concentração e reflexos rápidos. No Interclasse SENAI, esse esporte atrai tanto jogadores quanto espectadores, com partidas de tirar o fôlego.</p>
+    <button class="btn-toggle" onclick="toggle('texto-tenis')">Mostrar/Ocultar</button>
+    <img src="tenis.png" alt="Tênis de Mesa" class="imagem">
+  </section>
+
+  <section class="inscricao">
+    <h2>INSCREVA-SE JÁ! E PARTE DESSA FESTA:</h2>
+    <button class="btn-inscricao">ENVIAR INSCRIÇÃO</button>
+  </section>
+
+  <section class="rodape">
+    <h3>VOCÊ SABIA?</h3>
+    <p>Este evento é realizado pela AAPM do Senai Gaspar Ricardo Jr. do Santa Rosália, Sorocaba. Uma organização de (ex)/alunos e colaboradores.<br>
+    Saiba mais e se torne um contribuinte.</p>
+  </section>
+
+  <footer>
+    © 2025 Interclasse SENAI | Desenvolvido por Gabriela Oliveira e Giovanna Luiza
+  </footer>
+
+  <script>
+    function toggle(id) {
+      const elem = document.getElementById(id);
+      elem.style.display = elem.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
