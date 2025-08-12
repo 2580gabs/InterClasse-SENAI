@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1D1D1D;
+  color: white;
+  font-family: 'Varsity Team', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+header h1 .interclasse {
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+header h2 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.senai {
+  color: #C5003C;
+}
+
+.data {
+  color: #FFD233;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+/* Carrossel */
+.carrossel-container {
+  margin: 80px auto;
+  position: relative;
+  background-color: #2C2C2C;
+  padding: 30px;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.carrossel {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.carrossel img {
+  width: 300px;
+  height: auto;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.edicoes {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Botão */
+.botao {
+  display: inline-block;
+  background-color: #C5003C;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 40px;
+  font-size: 20Px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Varsity Team', sans-serif;
+  margin-top: 50px;
+}
+

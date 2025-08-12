@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interclasse 2025 - SENAI</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Varsity+Team&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><span class="interclasse">INTERCLASSE 2025</span></h1>
+      <h2><span class="senai">SENAI</span> ESPORTES</h2>
+      <h3 class="data">08 DE AGOSTO</h3>
+    </header>
+
+    <section class="carrossel-container">
+      <button class="nav prev" onclick="moverSlide(-1)">&#10094;</button>
+      <div class="carrossel">
+        <img src="img2.JPG" alt="Imagem 1">
+        <img src="img1.JPG" alt="Imagem 2">
+        <img src="img3.jpg" alt="Imagem 3">
+      </div>
+      <button class="nav next" onclick="moverSlide(1)">&#10095;</button>
+      <p class="edicoes">EDIÇÕES ANTERIORES</p>
+    </section>
+
+    <footer>
+      <a href="#" class="botao">SAIBA MAIS E PARTICIPE DESSA EXPERIÊNCIA!</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+   <!-- SIDE BAR -->
+    <nav>
+        <button id="menu" aria-label="menu" title="menu"></button>
+        <div id="sidebar">
+            <ul>
+                <li><a href="#home">PRINCIPAL</a></li>
+                <li><a href="#participantes">CHAVEAMENTO</a></li>
+                <li><a href="#jogo-fifa">JOGOS</a></li>
+                <li><a href="#boxRegulamento">REGULAMENTO</a></li>
+                <li><a href="#boxParticipar">PARTICIPE</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <a href="#home" id="botaoRetornar">
+        <img src="assets/img/arrowUp.svg" alt="flecha para cima">
+    </a>
+
+
+    <div class="transicao"></div>
+
+    <!-- INTRODUÇÃO -->
+    <section id="introducao">
+        <div id="textosIntroducao">
+            <h2>Um interclasse <br>
+                cheio de emoções <br>
+                e competitividade.</h2>
+            <hr>
+            <p>Prepare-se para mergulhar em um universo repleto de adrenalina, estratégia e muita diversão...</p>
+        </div>
+    </section>
+
+    <section id="participantes">
+        <h2>Chaveamento</h2>
+        <div id="boxChaveamento">
+            <div id="textoChaveamento">
+                <h2>Verifique seu Chaveamento!</h2>
+                <h4 style="text-align: center;">Apenas no dia do evento.</h4>
+                <p>Clique nos botões abaixo para conferir</p>
+
+                <div id="boxBotoesChaveamento">
+                    <a href="#" class="botoesChaveamento" target="_blank">EA SPORTS FC 24</a>
+                    <a href="#" class="botoesChaveamento" target="_blank">STREET FIGHTER 6</a>
+                    <a href="#" class="botoesChaveamento" target="_blank"><span id="ptcg">POKÉMON TCG POCKET</span></a>
+                    <a href="#" class="botoesChaveamento" target="_blank">BRAWL STARS</a>
+                </div>
+
+                <a href="#" id="incricoesChaveamento" target="_blank">Inscrições confirmadas em breve!</a>
+            </div>
+
+            <div id="cardChaveamento"></div>
+        </div>
+    </section>
+
+    <!-- FIFA -->
+    <section class="SecaoJogos" id="jogo-fifa">
+        <div class="JogosContainer">
+
+            <div class="JogosTitulo">
+                <h2 class="tituloGSAP">EA Sports FC 24</h2>
+                <p class="textoGSAP">(PS4)</p>
+            </div>
+
+            <div class="JogosDescricao">
+                <p class="textoGSAP">Experimente a emoção do futebol no <span id="spanVermelho">EA Sports</span></p>
+                <p class="textoGSAP"><span id="spanVermelho">FC 24</span> onde cada partida é uma jornada rumo à </p>
+                <p class="textoGSAP">glória, e cada gol é uma explosão de celebração.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="transicao"></div>
+
+    <section id="zoom-out">
+        <video autoplay muted loop>
+            <source src="https://finadobitorneira.github.io/InterclasseGamer/assets/img/section-fifa/fc24-trailer.mp4" type="video/mp4" alt="Vídeo EA Sports FC 24">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </section>
+
+    <!-- STREET FIGHTER 6 -->
+    <section id="jogo-street" class="SecaoJogos">
+        <div class="JogosContainer">
+            <div class="JogosTitulo">
+                <h2 class="tituloGSAP">Street Fighter 6</h2>
+                <p class="textoGSAP">(Xbox Series S)</p>
+            </div>
+
+            <div class="JogosDescricao">
+                <p class="textoGSAP">Entre na arena do <span id="spanVermelho">Street Fighter 6</span> e prove sua</p>
+                <p class="textoGSAP">habilidade em combates épicos, onde cada movimento</p>
+                <p class="textoGSAP">é uma demonstração de destreza e estratégia.</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=rN_PBAK5YyM" data-fancybox>
+                <img src="assets/img/trailer.png" class="trailer" alt="Botão trailer">
+            </a>
+        </div>
+    </section>
+
+    <!-- BRAWL STARS -->
+    <section id="jogo-brawl" class="SecaoJogos">
+        <div class="JogosContainer">
+            <div class="JogosTitulo">
+                <h2 class="tituloGSAP">Brawl Stars</h2>
+                <p class="textoGSAP">(Mobile)</p>
+            </div>
+
+            <div class="JogosDescricao">
+                <p class="textoGSAP">Mergulhe na ação frenética de <span id="spanVermelho">Brawl Stars,</span></p>
+                <p class="textoGSAP">onde a diversão é garantida em cada batalha</p>
+                <p class="textoGSAP">multiplayer, desafio e conquista.</p>
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=CaryjOdYFa0" data-fancybox>
+                <img src="assets/img/trailer.png" class="trailer" alt="Botão trailer">
+            </a>
+        </div>
+    </section>
+
+    <!-- POKÉMON TCG POCKET -->
+    <section id="jogo-pokemon" class="SecaoJogos">
+        <div class="JogosContainer">
+            <div class="JogosTitulo">
+                <h2 class="tituloGSAP">Pokémon TCG Pocket</h2>
+                <p class="textoGSAP">(Mobile)</p>
+            </div>
+
+            <div class="JogosDescricao">
+                <p class="textoGSAP">Batalhe online no jogo de cartas mais popular do mundo</p>
+                <p class="textoGSAP">com <span id="spanVermelho">Pokémon TCG Pocket</span>, monte seu deck de cartas e mostre</p>
+                <p class="textoGSAP">ser um erdadeiro mestre Pokémon!</p>
+            </div>
+
+            <a target="_blank" href="https://www.youtube.com/watch?v=_lljsI-__Nk">
+                <img src="assets/img/trailer.png" class="trailer" alt="Botão trailer">
+            </a>
+        </div>
+    </section>
+
+    <section id="participar">
+        <h2>Gostou do que viu?</h2>
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon"></div>
+                    <div class="description">
+                        <h4>EA Sports FC 24</h4>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon"></div>
+                    <div class="description">
+                        <h4>Street Fighter 6</h4>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon"></div>
+                    <div class="description">
+                        <h4>Brawl Stars</h4>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4">
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icon"></div>
+                    <div class="description">
+                        <h4>Pokémon TCG Pocket</h4>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div id="boxParticipar">
+            <div>
+                <h3>Você está preparado?</h3>
+                <h3>Tente a sorte!</h3>
+            </div>
+
+            <a href="https://forms.gle/ixhE2SBdjAumGCpx5"
+                target="_blank" class="btn btn--action"><span style="font-size: 150%;">PARTICIPAR</span></a>
+        </div>
+    </section>
+
+    <footer>
+        <div id="contato">
+            <!-- <div class="abasContato">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#home">PRINCIPAL</a></li>
+                    <li><a href="#introducao">SOBRE</a></li>
+                    <li><a href="#jogo-fifa">JOGOS</a></li>
+                </ul>
+            </div> -->
+
+            <div class="abasContato">
+                <h5>Sobre nós</h5>
+                <p>Site desenvolvido por:</p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/duartefx" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg" alt="Logo do github">
+                            <p>Giovana Duarte</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JulioCoronetti" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg" alt="Logo do github">
+                            <p>Julio Coronetti</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/PietroMena" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg" alt="Logo do github">
+                            <p>Pedro Henrique</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ContaPraApagar" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg" alt="Logo do github">
+                            <p>Nicolas Macedo</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="abasContato" id="boxRegulamento">
+                <h5>Fique por dentro</h5>
+                <p>Verifique o regulamento a baixo:</p>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vTCgmgxulxMjuZozSx_CVXgP5P1dZMDuBtc3hm6v90-UbSFmfVvdVEhvSsZFbAT_kn5TcIYjtPzh7gG/pub"
+                    id="regulamento" target="_blank">Regulamento
+                </a>
+            </div>
+
+            <div class="abasContato">
+                <h5>Ficou com alguma duvida?</h5>
+                <p>Envie uma mensagem diretamente para nós.</p>
+                <a href="https://wa.me/5515981853391?text=Ol%C3%A1%21+Sou+aluno%28a%29+do+SENAI+e+tenho+uma+d%C3%BAvida+quanto+ao+Interclasses%3A+SENAI+Gamer"
+                    id="botaoEmail" aria-label="Copiar email" title="Copiar email" target="_blank">Clique
+                    aqui!
+                </a>
+            </div>
+        </div>
+
+        <p id="orientador">Mentor: <a target="_blank" href="https://www.linkedin.com/in/leandro-gr/">Prof. Leandro G. Rosa</a></p>
+
+    </footer>
+
+    <!-- JAVASCRIPT LINKS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="https://unpkg.com/split-type" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+        integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/gsap.js" defer></script>
+    <script src="assets/js/lenis.js" defer></script>
+</body>
+
+</html>
